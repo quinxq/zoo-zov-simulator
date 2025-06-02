@@ -24,10 +24,9 @@
 - **cd zoo-zov-simulator**
 2. **Откройте проект в Visual Studio:**
 - **Запустите Visual Studio (рекомендуется версия 2022).**
-- **Выберите File → Open → Project/Solution.**
-- **Откройте файл zoosimulator.sln.**
+- **Скомпилируйте файл ZooSimulator.cpp**
 3. **Убедитесь, что компилятор поддерживает C++17:**
-- **Проект использует стандарт C++17. Например, MSVC (Microsoft Visual C++) в Visual Studio подходит.**
+- **Проект использует стандарт C++17.**
 4. **Скомпилируйте и запустите проект:**
 - **Нажмите F5 или выберите Debug → Start Debugging в Visual Studio.**
 
