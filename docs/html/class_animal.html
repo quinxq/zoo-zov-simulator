@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zoo simulator: Класс Animal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Zoo simulator
+   </div>
+   <div id="projectbrief">Симуляция управления зоопарком на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_animal.html','','class_animal-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс Animal</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Представляет животное в зоопарке.  
+ <a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8cf59c1945de48849d150d4dc0ff9211" id="r_a8cf59c1945de48849d150d4dc0ff9211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cf59c1945de48849d150d4dc0ff9211">Animal</a> (string sp, string name, int age, double w, <a class="el" href="zoo__simulator_8cpp.html#adc9fee6ad7fde07167b697ab6984f5d5">Climate</a> c, int p, <a class="el" href="zoo__simulator_8cpp.html#a6f4aee1c6d261958dbe9554417a936db">AnimalType</a> t, <a class="el" href="zoo__simulator_8cpp.html#a3667e3c5ec056737c8789615a989324f">Gender</a> g, bool born=false, int encId=-1, int daysPurch=0, pair&lt; string, string &gt; par={ &quot;None&quot;, &quot;None&quot; }, bool sick=false)</td></tr>
+<tr class="memdesc:a8cf59c1945de48849d150d4dc0ff9211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает объект животного.  <br /></td></tr>
+<tr class="memitem:af2d450722b70b6713e724609aff39a8b" id="r_af2d450722b70b6713e724609aff39a8b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2d450722b70b6713e724609aff39a8b">getSpecies</a> () const</td></tr>
+<tr class="memdesc:af2d450722b70b6713e724609aff39a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает название вида.  <br /></td></tr>
+<tr class="memitem:a0aa118222f52435e3037a387b2cf84c5" id="r_a0aa118222f52435e3037a387b2cf84c5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aa118222f52435e3037a387b2cf84c5">getDisplayName</a> () const</td></tr>
+<tr class="memdesc:a0aa118222f52435e3037a387b2cf84c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает отображаемое имя.  <br /></td></tr>
+<tr class="memitem:a1ec8ff22881520d9e661771c7d5a27bb" id="r_a1ec8ff22881520d9e661771c7d5a27bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec8ff22881520d9e661771c7d5a27bb">getAgeDays</a> () const</td></tr>
+<tr class="memdesc:a1ec8ff22881520d9e661771c7d5a27bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает возраст в днях.  <br /></td></tr>
+<tr class="memitem:a96ab6e5e6327b44568fd900e422d2149" id="r_a96ab6e5e6327b44568fd900e422d2149"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ab6e5e6327b44568fd900e422d2149">getWeight</a> () const</td></tr>
+<tr class="memdesc:a96ab6e5e6327b44568fd900e422d2149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает вес.  <br /></td></tr>
+<tr class="memitem:a10c9968e3dfc4ffff5545bc4109ed238" id="r_a10c9968e3dfc4ffff5545bc4109ed238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zoo__simulator_8cpp.html#adc9fee6ad7fde07167b697ab6984f5d5">Climate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c9968e3dfc4ffff5545bc4109ed238">getPreferredClimate</a> () const</td></tr>
+<tr class="memdesc:a10c9968e3dfc4ffff5545bc4109ed238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает предпочитаемый климат.  <br /></td></tr>
+<tr class="memitem:afe1cdea6a91a0b1af210713cc1be14f3" id="r_afe1cdea6a91a0b1af210713cc1be14f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe1cdea6a91a0b1af210713cc1be14f3">getPrice</a> () const</td></tr>
+<tr class="memdesc:afe1cdea6a91a0b1af210713cc1be14f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает стоимость покупки.  <br /></td></tr>
+<tr class="memitem:a34d4028e12055ebde6047aa81e3b9f30" id="r_a34d4028e12055ebde6047aa81e3b9f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zoo__simulator_8cpp.html#a6f4aee1c6d261958dbe9554417a936db">AnimalType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d4028e12055ebde6047aa81e3b9f30">getType</a> () const</td></tr>
+<tr class="memdesc:a34d4028e12055ebde6047aa81e3b9f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает тип животного.  <br /></td></tr>
+<tr class="memitem:a8134a6ea652907e3e4c3978ed1ac196a" id="r_a8134a6ea652907e3e4c3978ed1ac196a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8134a6ea652907e3e4c3978ed1ac196a">getEnclosureId</a> () const</td></tr>
+<tr class="memdesc:a8134a6ea652907e3e4c3978ed1ac196a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает идентификатор вольера.  <br /></td></tr>
+<tr class="memitem:a25d2b178aed9fb68faff00f0c6f0d7f6" id="r_a25d2b178aed9fb68faff00f0c6f0d7f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25d2b178aed9fb68faff00f0c6f0d7f6">getDaysSincePurchase</a> () const</td></tr>
+<tr class="memdesc:a25d2b178aed9fb68faff00f0c6f0d7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает дни с момента покупки.  <br /></td></tr>
+<tr class="memitem:a46598f491b0c4066817e375b83a8c11b" id="r_a46598f491b0c4066817e375b83a8c11b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zoo__simulator_8cpp.html#a3667e3c5ec056737c8789615a989324f">Gender</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46598f491b0c4066817e375b83a8c11b">getGender</a> () const</td></tr>
+<tr class="memdesc:a46598f491b0c4066817e375b83a8c11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает пол животного.  <br /></td></tr>
+<tr class="memitem:a2af1742d4fe8837b464fba4668f79ec4" id="r_a2af1742d4fe8837b464fba4668f79ec4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2af1742d4fe8837b464fba4668f79ec4">getIsBornInZoo</a> () const</td></tr>
+<tr class="memdesc:a2af1742d4fe8837b464fba4668f79ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, родилось ли животное в зоопарке.  <br /></td></tr>
+<tr class="memitem:a56b6fb60a430377ae5a0124ca5a9a2ec" id="r_a56b6fb60a430377ae5a0124ca5a9a2ec"><td class="memItemLeft" align="right" valign="top">pair&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56b6fb60a430377ae5a0124ca5a9a2ec">getParents</a> () const</td></tr>
+<tr class="memdesc:a56b6fb60a430377ae5a0124ca5a9a2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает имена родителей.  <br /></td></tr>
+<tr class="memitem:aef7015e5517c0f9b3492e46873f9ff2b" id="r_aef7015e5517c0f9b3492e46873f9ff2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef7015e5517c0f9b3492e46873f9ff2b">getIsSick</a> () const</td></tr>
+<tr class="memdesc:aef7015e5517c0f9b3492e46873f9ff2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, болеет ли животное.  <br /></td></tr>
+<tr class="memitem:adf3fcf8bc85625c432dad60def75adab" id="r_adf3fcf8bc85625c432dad60def75adab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3fcf8bc85625c432dad60def75adab">getUniqueId</a> () const</td></tr>
+<tr class="memdesc:adf3fcf8bc85625c432dad60def75adab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает уникальный идентификатор.  <br /></td></tr>
+<tr class="memitem:ac4009865824807ab12ae426031ef3d97" id="r_ac4009865824807ab12ae426031ef3d97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4009865824807ab12ae426031ef3d97">setEnclosureId</a> (int id)</td></tr>
+<tr class="memdesc:ac4009865824807ab12ae426031ef3d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает идентификатор вольера.  <br /></td></tr>
+<tr class="memitem:ac41b7781db21b068105dfcb07429f4c4" id="r_ac41b7781db21b068105dfcb07429f4c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac41b7781db21b068105dfcb07429f4c4">incrementDaysSincePurchase</a> ()</td></tr>
+<tr class="memdesc:ac41b7781db21b068105dfcb07429f4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает дни с момента покупки.  <br /></td></tr>
+<tr class="memitem:af167d46b39b3251b1f7f5ac65ad41cae" id="r_af167d46b39b3251b1f7f5ac65ad41cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af167d46b39b3251b1f7f5ac65ad41cae">incrementAgeDays</a> ()</td></tr>
+<tr class="memdesc:af167d46b39b3251b1f7f5ac65ad41cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает возраст в днях.  <br /></td></tr>
+<tr class="memitem:ade2d49285884effc3e7ed546625a16a0" id="r_ade2d49285884effc3e7ed546625a16a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade2d49285884effc3e7ed546625a16a0">setDisplayName</a> (const string &amp;name)</td></tr>
+<tr class="memdesc:ade2d49285884effc3e7ed546625a16a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает отображаемое имя.  <br /></td></tr>
+<tr class="memitem:aca8e3ff50ed36e9a08928a992d68f754" id="r_aca8e3ff50ed36e9a08928a992d68f754"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca8e3ff50ed36e9a08928a992d68f754">setSick</a> (bool sick)</td></tr>
+<tr class="memdesc:aca8e3ff50ed36e9a08928a992d68f754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает статус болезни.*.  <br /></td></tr>
+<tr class="memitem:a4990159a73ca3c5808b1901bae129d50" id="r_a4990159a73ca3c5808b1901bae129d50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_animal.html">Animal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4990159a73ca3c5808b1901bae129d50">operator+</a> (const <a class="el" href="class_animal.html">Animal</a> &amp;other) const</td></tr>
+<tr class="memdesc:a4990159a73ca3c5808b1901bae129d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Размножает двух животных для создания новорожденного.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Представляет животное в зоопарке. </p>
+<p>Хранит информацию о животном, включая вид, возраст, вес и состояние здоровья. Поддерживает размножение через оператор +. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a8cf59c1945de48849d150d4dc0ff9211" name="a8cf59c1945de48849d150d4dc0ff9211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf59c1945de48849d150d4dc0ff9211">&#9670;&#160;</a></span>Animal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Animal::Animal </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>sp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>age</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zoo__simulator_8cpp.html#adc9fee6ad7fde07167b697ab6984f5d5">Climate</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zoo__simulator_8cpp.html#a6f4aee1c6d261958dbe9554417a936db">AnimalType</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zoo__simulator_8cpp.html#a3667e3c5ec056737c8789615a989324f">Gender</a></td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>born</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>encId</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>daysPurch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pair&lt; string, string &gt;</td>          <td class="paramname"><span class="paramname"><em>par</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{&#160;&quot;None&quot;,&#160;&quot;None&quot;&#160;}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>sick</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает объект животного. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sp</td><td>Название вида. </td></tr>
+    <tr><td class="paramname">name</td><td>Отображаемое имя. </td></tr>
+    <tr><td class="paramname">age</td><td>Возраст в днях. </td></tr>
+    <tr><td class="paramname">w</td><td>Вес в килограммах. </td></tr>
+    <tr><td class="paramname">c</td><td>Предпочитаемый климат. </td></tr>
+    <tr><td class="paramname">p</td><td>Стоимость покупки. </td></tr>
+    <tr><td class="paramname">t</td><td>Тип животного (травоядное или хищник). </td></tr>
+    <tr><td class="paramname">g</td><td>Пол животного. </td></tr>
+    <tr><td class="paramname">born</td><td>Истина, если родилось в зоопарке (по умолчанию false). </td></tr>
+    <tr><td class="paramname">encId</td><td>Идентификатор вольера (по умолчанию -1). </td></tr>
+    <tr><td class="paramname">daysPurch</td><td>Дни с момента покупки (по умолчанию 0). </td></tr>
+    <tr><td class="paramname">par</td><td>Имена родителей (по умолчанию {"None", "None"}). </td></tr>
+    <tr><td class="paramname">sick</td><td>Истина, если животное болеет (по умолчанию false). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a1ec8ff22881520d9e661771c7d5a27bb" name="a1ec8ff22881520d9e661771c7d5a27bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec8ff22881520d9e661771c7d5a27bb">&#9670;&#160;</a></span>getAgeDays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animal::getAgeDays </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает возраст в днях. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возраст в днях. </dd></dl>
+
+</div>
+</div>
+<a id="a25d2b178aed9fb68faff00f0c6f0d7f6" name="a25d2b178aed9fb68faff00f0c6f0d7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d2b178aed9fb68faff00f0c6f0d7f6">&#9670;&#160;</a></span>getDaysSincePurchase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animal::getDaysSincePurchase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает дни с момента покупки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Дни с момента покупки. </dd></dl>
+
+</div>
+</div>
+<a id="a0aa118222f52435e3037a387b2cf84c5" name="a0aa118222f52435e3037a387b2cf84c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa118222f52435e3037a387b2cf84c5">&#9670;&#160;</a></span>getDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Animal::getDisplayName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает отображаемое имя. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Отображаемое имя. </dd></dl>
+
+</div>
+</div>
+<a id="a8134a6ea652907e3e4c3978ed1ac196a" name="a8134a6ea652907e3e4c3978ed1ac196a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8134a6ea652907e3e4c3978ed1ac196a">&#9670;&#160;</a></span>getEnclosureId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animal::getEnclosureId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает идентификатор вольера. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Идентификатор вольера. </dd></dl>
+
+</div>
+</div>
+<a id="a46598f491b0c4066817e375b83a8c11b" name="a46598f491b0c4066817e375b83a8c11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46598f491b0c4066817e375b83a8c11b">&#9670;&#160;</a></span>getGender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zoo__simulator_8cpp.html#a3667e3c5ec056737c8789615a989324f">Gender</a> Animal::getGender </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает пол животного. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Пол животного. </dd></dl>
+
+</div>
+</div>
+<a id="a2af1742d4fe8837b464fba4668f79ec4" name="a2af1742d4fe8837b464fba4668f79ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af1742d4fe8837b464fba4668f79ec4">&#9670;&#160;</a></span>getIsBornInZoo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Animal::getIsBornInZoo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, родилось ли животное в зоопарке. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Истина, если родилось в зоопарке. </dd></dl>
+
+</div>
+</div>
+<a id="aef7015e5517c0f9b3492e46873f9ff2b" name="aef7015e5517c0f9b3492e46873f9ff2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7015e5517c0f9b3492e46873f9ff2b">&#9670;&#160;</a></span>getIsSick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Animal::getIsSick </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет, болеет ли животное. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Истина, если животное болеет. </dd></dl>
+
+</div>
+</div>
+<a id="a56b6fb60a430377ae5a0124ca5a9a2ec" name="a56b6fb60a430377ae5a0124ca5a9a2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b6fb60a430377ae5a0124ca5a9a2ec">&#9670;&#160;</a></span>getParents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt; string, string &gt; Animal::getParents </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает имена родителей. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Пара имен родителей. </dd></dl>
+
+</div>
+</div>
+<a id="a10c9968e3dfc4ffff5545bc4109ed238" name="a10c9968e3dfc4ffff5545bc4109ed238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c9968e3dfc4ffff5545bc4109ed238">&#9670;&#160;</a></span>getPreferredClimate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zoo__simulator_8cpp.html#adc9fee6ad7fde07167b697ab6984f5d5">Climate</a> Animal::getPreferredClimate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает предпочитаемый климат. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Предпочитаемый климат. </dd></dl>
+
+</div>
+</div>
+<a id="afe1cdea6a91a0b1af210713cc1be14f3" name="afe1cdea6a91a0b1af210713cc1be14f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1cdea6a91a0b1af210713cc1be14f3">&#9670;&#160;</a></span>getPrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animal::getPrice </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает стоимость покупки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Стоимость покупки. </dd></dl>
+
+</div>
+</div>
+<a id="af2d450722b70b6713e724609aff39a8b" name="af2d450722b70b6713e724609aff39a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d450722b70b6713e724609aff39a8b">&#9670;&#160;</a></span>getSpecies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Animal::getSpecies </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает название вида. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Название вида. </dd></dl>
+
+</div>
+</div>
+<a id="a34d4028e12055ebde6047aa81e3b9f30" name="a34d4028e12055ebde6047aa81e3b9f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d4028e12055ebde6047aa81e3b9f30">&#9670;&#160;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zoo__simulator_8cpp.html#a6f4aee1c6d261958dbe9554417a936db">AnimalType</a> Animal::getType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает тип животного. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Тип животного (травоядное или хищник). </dd></dl>
+
+</div>
+</div>
+<a id="adf3fcf8bc85625c432dad60def75adab" name="adf3fcf8bc85625c432dad60def75adab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3fcf8bc85625c432dad60def75adab">&#9670;&#160;</a></span>getUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animal::getUniqueId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает уникальный идентификатор. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Уникальный идентификатор. </dd></dl>
+
+</div>
+</div>
+<a id="a96ab6e5e6327b44568fd900e422d2149" name="a96ab6e5e6327b44568fd900e422d2149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ab6e5e6327b44568fd900e422d2149">&#9670;&#160;</a></span>getWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Animal::getWeight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает вес. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Вес в килограммах. </dd></dl>
+
+</div>
+</div>
+<a id="af167d46b39b3251b1f7f5ac65ad41cae" name="af167d46b39b3251b1f7f5ac65ad41cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af167d46b39b3251b1f7f5ac65ad41cae">&#9670;&#160;</a></span>incrementAgeDays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animal::incrementAgeDays </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличивает возраст в днях. </p>
+
+</div>
+</div>
+<a id="ac41b7781db21b068105dfcb07429f4c4" name="ac41b7781db21b068105dfcb07429f4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41b7781db21b068105dfcb07429f4c4">&#9670;&#160;</a></span>incrementDaysSincePurchase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animal::incrementDaysSincePurchase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличивает дни с момента покупки. </p>
+
+</div>
+</div>
+<a id="a4990159a73ca3c5808b1901bae129d50" name="a4990159a73ca3c5808b1901bae129d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4990159a73ca3c5808b1901bae129d50">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_animal.html">Animal</a> Animal::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_animal.html">Animal</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Размножает двух животных для создания новорожденного. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Другое животное для размножения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Новый объект <a class="el" href="class_animal.html" title="Представляет животное в зоопарке.">Animal</a>, представляющий новорожденного. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">runtime_error</td><td>Если животные не в одном вольере, одного пола или слишком молоды (&lt;= 5 дней). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade2d49285884effc3e7ed546625a16a0" name="ade2d49285884effc3e7ed546625a16a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2d49285884effc3e7ed546625a16a0">&#9670;&#160;</a></span>setDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animal::setDisplayName </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливает отображаемое имя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Новое отображаемое имя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4009865824807ab12ae426031ef3d97" name="ac4009865824807ab12ae426031ef3d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4009865824807ab12ae426031ef3d97">&#9670;&#160;</a></span>setEnclosureId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animal::setEnclosureId </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливает идентификатор вольера. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Новый идентификатор вольера. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aca8e3ff50ed36e9a08928a992d68f754" name="aca8e3ff50ed36e9a08928a992d68f754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8e3ff50ed36e9a08928a992d68f754">&#9670;&#160;</a></span>setSick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animal::setSick </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>sick</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливает статус болезни.*. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sick</td><td>Истина, чтобы отметить животное как больное. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="zoo__simulator_8cpp.html">zoo_simulator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_animal.html">Animal</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

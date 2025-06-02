@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zoo simulator: Файл zoo_simulator.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Zoo simulator
+   </div>
+   <div id="projectbrief">Симуляция управления зоопарком на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('zoo__simulator_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл zoo_simulator.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;clocale&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:Loan" id="r_Loan"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_loan.html">Loan</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет финансовый кредит, взятый зоопарком.  <a href="class_loan.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Animal" id="r_Animal"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animal.html">Animal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет животное в зоопарке.  <a href="class_animal.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Enclosure" id="r_Enclosure"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enclosure.html">Enclosure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет вольер в зоопарке.  <a href="class_enclosure.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Worker" id="r_Worker"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_worker.html">Worker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет работника зоопарка.  <a href="class_worker.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Zoo" id="r_Zoo"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_zoo.html">Zoo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет зоопарк и его операции.  <a href="class_zoo.html#details">Подробнее...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a6f4aee1c6d261958dbe9554417a936db" id="r_a6f4aee1c6d261958dbe9554417a936db"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f4aee1c6d261958dbe9554417a936db">AnimalType</a> { <a class="el" href="#a6f4aee1c6d261958dbe9554417a936dba4afcd0c30b8a6928f98519c34d405e43">HERBIVORE</a>
+, <a class="el" href="#a6f4aee1c6d261958dbe9554417a936dbacb3088fa4f9df1b3177493000e8aa40e">CARNIVORE</a>
+ }</td></tr>
+<tr class="memdesc:a6f4aee1c6d261958dbe9554417a936db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет тип животного по рациону питания.  <a href="#a6f4aee1c6d261958dbe9554417a936db">Подробнее...</a><br /></td></tr>
+<tr class="memitem:adc9fee6ad7fde07167b697ab6984f5d5" id="r_adc9fee6ad7fde07167b697ab6984f5d5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc9fee6ad7fde07167b697ab6984f5d5">Climate</a> { <a class="el" href="#adc9fee6ad7fde07167b697ab6984f5d5ab2ef5f527a20dd2b0b0c4642685e1d1d">TROPICAL</a>
+, <a class="el" href="#adc9fee6ad7fde07167b697ab6984f5d5ad5938597ebb26919bd3b131a5f076b35">TEMPERATE</a>
+, <a class="el" href="#adc9fee6ad7fde07167b697ab6984f5d5a7d1b837b95d0935e32c6c52c7f997fc0">ARCTIC</a>
+ }</td></tr>
+<tr class="memdesc:adc9fee6ad7fde07167b697ab6984f5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет климатические предпочтения для животных и вольеров.  <a href="#adc9fee6ad7fde07167b697ab6984f5d5">Подробнее...</a><br /></td></tr>
+<tr class="memitem:a3667e3c5ec056737c8789615a989324f" id="r_a3667e3c5ec056737c8789615a989324f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3667e3c5ec056737c8789615a989324f">Gender</a> { <a class="el" href="#a3667e3c5ec056737c8789615a989324fa797e877326f44c5763d1458d7f56d87a">MALE</a>
+, <a class="el" href="#a3667e3c5ec056737c8789615a989324fa4bf2e31c60d6a605954e399524cae56b">FEMALE</a>
+ }</td></tr>
+<tr class="memdesc:a3667e3c5ec056737c8789615a989324f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет пол животного.  <a href="#a3667e3c5ec056737c8789615a989324f">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ad7262f5084c25e6b508b4cb1c0eff9af" id="r_ad7262f5084c25e6b508b4cb1c0eff9af"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7262f5084c25e6b508b4cb1c0eff9af">WorkerType</a> { <a class="el" href="#ad7262f5084c25e6b508b4cb1c0eff9afa551191f395c53dc0ea80741af1205bea">DIRECTOR</a>
+, <a class="el" href="#ad7262f5084c25e6b508b4cb1c0eff9afaa43e41e6b047c2ab2d1e4d168cfe76d2">VETERINARIAN</a>
+, <a class="el" href="#ad7262f5084c25e6b508b4cb1c0eff9afa4fd27a4e074fa185b2f72ec83ead61c3">CLEANER</a>
+, <a class="el" href="#ad7262f5084c25e6b508b4cb1c0eff9afae74f726476af356bfd287ffd5ce55f77">FEEDER</a>
+ }</td></tr>
+<tr class="memdesc:ad7262f5084c25e6b508b4cb1c0eff9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет типы работников в зоопарке.  <a href="#ad7262f5084c25e6b508b4cb1c0eff9af">Подробнее...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция для запуска симуляции зоопарка.  <br /></td></tr>
+</table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Перечисления</h2>
+<a id="a6f4aee1c6d261958dbe9554417a936db" name="a6f4aee1c6d261958dbe9554417a936db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4aee1c6d261958dbe9554417a936db">&#9670;&#160;</a></span>AnimalType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a6f4aee1c6d261958dbe9554417a936db">AnimalType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определяет тип животного по рациону питания. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a6f4aee1c6d261958dbe9554417a936dba4afcd0c30b8a6928f98519c34d405e43" name="a6f4aee1c6d261958dbe9554417a936dba4afcd0c30b8a6928f98519c34d405e43"></a>HERBIVORE&#160;</td><td class="fielddoc"><p>Травоядные животные </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6f4aee1c6d261958dbe9554417a936dbacb3088fa4f9df1b3177493000e8aa40e" name="a6f4aee1c6d261958dbe9554417a936dbacb3088fa4f9df1b3177493000e8aa40e"></a>CARNIVORE&#160;</td><td class="fielddoc"><p>Хищные животные </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="adc9fee6ad7fde07167b697ab6984f5d5" name="adc9fee6ad7fde07167b697ab6984f5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9fee6ad7fde07167b697ab6984f5d5">&#9670;&#160;</a></span>Climate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#adc9fee6ad7fde07167b697ab6984f5d5">Climate</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определяет климатические предпочтения для животных и вольеров. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="adc9fee6ad7fde07167b697ab6984f5d5ab2ef5f527a20dd2b0b0c4642685e1d1d" name="adc9fee6ad7fde07167b697ab6984f5d5ab2ef5f527a20dd2b0b0c4642685e1d1d"></a>TROPICAL&#160;</td><td class="fielddoc"><p>Тропический климат </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adc9fee6ad7fde07167b697ab6984f5d5ad5938597ebb26919bd3b131a5f076b35" name="adc9fee6ad7fde07167b697ab6984f5d5ad5938597ebb26919bd3b131a5f076b35"></a>TEMPERATE&#160;</td><td class="fielddoc"><p>Умеренный климат </p>
+</td></tr>
+<tr><td class="fieldname"><a id="adc9fee6ad7fde07167b697ab6984f5d5a7d1b837b95d0935e32c6c52c7f997fc0" name="adc9fee6ad7fde07167b697ab6984f5d5a7d1b837b95d0935e32c6c52c7f997fc0"></a>ARCTIC&#160;</td><td class="fielddoc"><p>Арктический климат </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3667e3c5ec056737c8789615a989324f" name="a3667e3c5ec056737c8789615a989324f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3667e3c5ec056737c8789615a989324f">&#9670;&#160;</a></span>Gender</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a3667e3c5ec056737c8789615a989324f">Gender</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определяет пол животного. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a3667e3c5ec056737c8789615a989324fa797e877326f44c5763d1458d7f56d87a" name="a3667e3c5ec056737c8789615a989324fa797e877326f44c5763d1458d7f56d87a"></a>MALE&#160;</td><td class="fielddoc"><p>Самец </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3667e3c5ec056737c8789615a989324fa4bf2e31c60d6a605954e399524cae56b" name="a3667e3c5ec056737c8789615a989324fa4bf2e31c60d6a605954e399524cae56b"></a>FEMALE&#160;</td><td class="fielddoc"><p>Самка </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad7262f5084c25e6b508b4cb1c0eff9af" name="ad7262f5084c25e6b508b4cb1c0eff9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7262f5084c25e6b508b4cb1c0eff9af">&#9670;&#160;</a></span>WorkerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ad7262f5084c25e6b508b4cb1c0eff9af">WorkerType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Определяет типы работников в зоопарке. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ad7262f5084c25e6b508b4cb1c0eff9afa551191f395c53dc0ea80741af1205bea" name="ad7262f5084c25e6b508b4cb1c0eff9afa551191f395c53dc0ea80741af1205bea"></a>DIRECTOR&#160;</td><td class="fielddoc"><p>Директор зоопарка </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7262f5084c25e6b508b4cb1c0eff9afaa43e41e6b047c2ab2d1e4d168cfe76d2" name="ad7262f5084c25e6b508b4cb1c0eff9afaa43e41e6b047c2ab2d1e4d168cfe76d2"></a>VETERINARIAN&#160;</td><td class="fielddoc"><p>Ветеринар </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7262f5084c25e6b508b4cb1c0eff9afa4fd27a4e074fa185b2f72ec83ead61c3" name="ad7262f5084c25e6b508b4cb1c0eff9afa4fd27a4e074fa185b2f72ec83ead61c3"></a>CLEANER&#160;</td><td class="fielddoc"><p>Уборщик </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7262f5084c25e6b508b4cb1c0eff9afae74f726476af356bfd287ffd5ce55f77" name="ad7262f5084c25e6b508b4cb1c0eff9afae74f726476af356bfd287ffd5ce55f77"></a>FEEDER&#160;</td><td class="fielddoc"><p>Кормилец </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основная функция для запуска симуляции зоопарка. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>0 при успешном выполнении. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="zoo__simulator_8cpp.html">zoo_simulator.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

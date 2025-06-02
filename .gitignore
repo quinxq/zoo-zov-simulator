@@ -1,0 +1,12 @@
+# игнор папки
+x64/
+# игнор файлов
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+.vs/ 
+*.exe 
+*.obj 
+*.pdb 
+/Debug/ 
+/Release/ 
