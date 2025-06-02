@@ -23,9 +23,9 @@
 
 **Чтобы запустить проект, выполните следующие шаги:**
 1. **Склонируйте репозиторий:**
- git clone https://github.com/quinxq/zoo-zov-simulator.git
+ **git clone https://github.com/quinxq/zoo-zov-simulator.git**
 - **Перейдите в папку проекта:**
- cd zoosimulator
+ **cd zoosimulator**
 2. **Откройте проект в Visual Studio:**
 - **Запустите Visual Studio (рекомендуется версия 2022).**
 - **Скомпилируйте файл ZooSimulator.cpp**
